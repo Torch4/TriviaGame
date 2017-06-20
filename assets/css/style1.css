@@ -1,0 +1,77 @@
+
+@font-face {
+    font-family:"Spectre";
+    src: url("../text/spectre.ttf");
+}
+
+
+
+body {
+    background-image: url("../images/background.png");
+    font-family:"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+   
+ 
+}
+
+
+.container {margin:auto;background:	#D3D3D3;}
+
+#header {font-family: "spectre";
+color:#DCC8C8;	
+  text-shadow: -1px -1px 0 #000;
+  position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%;
+   font-size:55px}
+
+
+#warning {
+	background:#989292; font-size:14px; font-weight: bold;color:#0C0C0C;}
+
+#currentQuestion,
+#timeLeft,
+#question,
+#answerList,
+#message,
+#correctedAnswer,
+#finalMessage,
+#correctAnswers,
+#incorrectAnswers,
+#unanswered {font-size:20px;}
+
+.btn-primary,.reset{
+  background-color: #313477;
+  color: white;
+   font-size: 30px;
+  padding: 20px;
+  margin-top: 100px;
+
+}
+.btn-primary:hover, .reset:hover{
+  background-color: white;
+}
+
+.container{
+  margin-top: 50px;
+  text-align: center;
+  width: 900px;
+}
+
+
+.thisChoice:hover{
+  background-color: #F0E6E6;
+  color: #1A1313;
+  padding: 10px;
+}
+
+
+
+
+@media screen and (max-width:640px){
+  .container{
+    width: 700px;
+    margin-top: 200px;
+    size: 200%;
+  } 
+}
