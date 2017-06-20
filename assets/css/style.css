@@ -29,7 +29,16 @@ color:#DCC8C8;
 #warning {
 	background:#989292; font-size:14px; font-weight: bold;color:#0C0C0C;}
 
-
+#currentQuestion,
+#timeLeft,
+#question,
+#answerList,
+#message,
+#correctedAnswer,
+#finalMessage,
+#correctAnswers,
+#incorrectAnswers,
+#unanswered {font-size:20px;}
 
 .btn-primary,.reset{
   background-color: #313477;
