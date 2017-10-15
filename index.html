@@ -4,13 +4,16 @@
       <title>James Bond Trivia</title>
         <meta name="description" content="">
           <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!-- Latest compiled and minified CSS -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
                 <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-                   <link rel="stylesheet" href="assets/css/style.css">
+                   <!-- link css -->
+                  <link rel="stylesheet" href="assets/css/style.css">
                      </head>
 
 <body>
+  <!--creates overall grid -->
   <div class="container">
     <div class="row">
       <div class="image">
@@ -25,7 +28,7 @@
     <h1 id="header" class="text-center">Trivia, Bond 007 Trivia</h1><p  class="text-center"><span id="warning">Some questions and/or answers may contain content which may be unsuitable for children</span></p>
       <div class="mainArea col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
         </div>
-                   
+         <-------Sets up questions and answers-----> 
           <button class='btn btn-primary' id='startBtn'>Start</button>
             <h3 id=timeLeft></h3>
               <h3 id=currentQuestion></h3>
@@ -52,6 +55,7 @@
         <br>
         <br>
         <br>
+<-------connects javascript file to HTML----->    
 <script src="assets/javascript/game.js"></script>
          
 </body>
