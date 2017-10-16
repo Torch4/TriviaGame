@@ -1,7 +1,7 @@
 
 //Missing is code that on click would access file for "gun cocking".
 //Second Sound File would be accessed upon a wrong answer and would fire a shot.
-
+//Array of Questions
 var triviaQuestions = [{
 	question: "Which villian's weapon was a hat?",
 	answerList: ["Odd Job", "Jaws", "Xenia Onatopp", "Auric Goldfinger"],
@@ -44,7 +44,7 @@ var triviaQuestions = [{
 	answerList: ["It's Actually Q"," Sir Christopher Smith","Major Geoffrey Boothroyd","Colonel William Lawrence"],
 	answer: 2
 },]
-
+//image array that connects image to question
 var gifArray = ['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8','question9','question10'];
 var currentQuestion; var correctAnswer; var incorrectAnswer; var unanswered; var seconds; var time; var answered; var userSelect;
 var messages = {
@@ -53,7 +53,7 @@ var messages = {
 	endTime: "Out of time!",
 	finished: "The mission is over,<br> did you come out unscathed."
 }
-
+//buttons
 $('#startBtn').on('click', function(){
 	$(this).hide();
 	game();
@@ -100,7 +100,7 @@ function Question(){
 		answers();
 	});
 }
-
+//Sets countdown to answer the question
 function countdown(){
 	seconds = 15;
 	$('#timeLeft').html('<h3>Time Remaining: ' + seconds + '</h3>');
@@ -149,7 +149,7 @@ function answers(){
 		setTimeout(Question, 5000);
 	}	
 }
-
+//Sets up score board
 function scoreboard(){
 	$('#timeLeft').empty();
 	$('#message').empty();
